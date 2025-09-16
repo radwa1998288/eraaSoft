@@ -1,0 +1,27 @@
+Summary of Primary Key
+A Primary Key is a specific type of database constraint that uniquely identifies each record in a table. It serves as a unique identifier for rows, ensuring that no two rows have the same value in the primary key column(s). A primary key must meet the following criteria:
+
+Uniqueness: Each value in the primary key column(s) must be unique across the table.
+Non-null: A primary key cannot contain NULL values; every record must have a value for the primary key.
+Immutable: The values of a primary key should not change over time.
+Primary keys are essential for maintaining data integrity and establishing relationships between tables in a relational database.
+
+Difference Between Primary Key, Unique, and Not Null
+Primary Key:
+
+Uniquely identifies each record in a table.
+Cannot contain NULL values.
+There can only be one primary key per table, but it can consist of multiple columns (composite key).
+Unique Constraint:
+
+Ensures that all values in a column (or a set of columns) are unique across the table.
+Can contain NULL values (but only one NULL per unique constraint, depending on the database system).
+A table can have multiple unique constraints.
+Not Null Constraint:
+
+Ensures that a column cannot have NULL values.
+Does not enforce uniqueness; multiple records can have the same value in a column with a NOT NULL constraint.
+A table can have multiple NOT NULL constraints on different columns.
+Summary of Differences
+A Primary Key is inherently a Unique constraint, but it also requires that the column(s) cannot have NULL values and serves as the main identifier for records.
+A Unique constraint allows NULL values (with some limitations) and can have multiple instances in a table, while a Not Null constraint simply ensures a column must have a value without enforcing uniqueness.
